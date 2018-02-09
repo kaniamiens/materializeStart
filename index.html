@@ -3,7 +3,7 @@
     <head>
         
         <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=material+Icons"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <!--import materialize.css-->
         <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen, projection"/>
         <!--import our stylesheet-->
@@ -27,42 +27,69 @@
                     </ul>
             </div>
         </nav>
+         <!-- Element Showed -->
+                <a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
+                <!-- Tap Target Structure -->
+                <div class="tap-target" data-activates="menu">
+                    <div class="tap-target-content">
+                        <h5>Title</h5>
+                        <p>A bunch of text</p>
+                        <a href="#!" onclick="$('.tap-target').tapTarget('close')">Dismiss</a>
+                    </div>
+                 </div>
         
         <img class="responsive-img" src="assets/headerImg.jpg" max-width="100%" height="auto"/>
         </header>
         
         <main>
-        <div class="row container">
-        <!--card 1-->
-        <div class="col s4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="assets/card1.jpg">
-                    <span class="card-title">Card title</span>
+             
+            <div class="row container">
+                <!--card 1-->
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/card1.jpeg">
+                            <span class="card-title">Card title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                <!--card 2-->
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/card2.jpeg">
+                            <span class="card-title">Card title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
+                <!--card 3-->
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/card3.jpeg">
+                            <span class="card-title">Card title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>                       
             </div>
-        </div>
-        <!--card 2-->
-        <div class="col s4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="assets/card1.jpg">
-                    <span class="card-title">Card title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-        </div>
-            
         </main>
         
         <footer class="page-footer">
