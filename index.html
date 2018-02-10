@@ -8,6 +8,10 @@
         <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen, projection"/>
         <!--import our stylesheet-->
         <link href="css/myStylesheet.css" type="text/css" rel="stylesheet"/>
+        <!--import jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--import materialize.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
         <!-- Let the browser know the website is optimized for mobile-->
         <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
@@ -19,30 +23,43 @@
         <header>
         <nav>
             <div class="nav-wrapper container">
-                <a href="#" class="brand-logo">Logo</a>
+                <a href="#!" class="brand-logo">Logo</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><a href="sass.html">Sass</a></li>
                         <li><a href="badges.html">Components</a></li>
                         <li><a href="collapsible.html">Javascript</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="sass.html">Sass</a></li>
+                        <li><a href="badges.html">Components</a></li>
+                        <li><a href="collapsible.html">Javascript</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
                     </ul>
             </div>
         </nav>
-         <!-- Element Showed -->
-                <a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
-                <!-- Tap Target Structure -->
-                <div class="tap-target" data-activates="menu">
-                    <div class="tap-target-content">
-                        <h5>Title</h5>
-                        <p>A bunch of text</p>
-                        <a href="#!" onclick="$('.tap-target').tapTarget('close')">Dismiss</a>
-                    </div>
-                 </div>
-        
+            
+        <!--Activates collapsing-->
+        <script>
+            $( document ).ready(function(){
+                $(".button-collapse").sideNav();
+            })
+        </script>
+            
         <img class="responsive-img" src="assets/headerImg.jpg" max-width="100%" height="auto"/>
         </header>
-        
         <main>
-             
+            <a class="btn" id="opentt" onclick="$('.tap-target').tapTarget('open');">Open tap-target</a>
+            <!-- Element Showed -->
+            <a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
+             <!-- Tap Target Structure -->
+                <div class="tap-target" data-activates="menu">
+                    <div class="tap-target-content">
+                        <h5>FeatureDiscovery</h5>
+                        <p>How to make a tap-target.</p>
+                    </div>
+                </div>
             <div class="row container">
                 <!--card 1-->
                 <div class="col s4">
@@ -55,7 +72,7 @@
                             <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">This is a link</a>
+                            <a href="link">This is a link</a>
                         </div>
                     </div>
                 </div>
@@ -79,7 +96,7 @@
                     <div class="card">
                         <div class="card-image">
                             <img src="assets/card3.jpeg">
-                            <span class="card-title">Card title</span>
+                            <span class="card-title">Card title</span>    
                         </div>
                         <div class="card-content">
                             <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -89,6 +106,11 @@
                         </div>
                     </div>
                 </div>                       
+            </div>
+            <div class="row container">
+                <div class="parallax-container">
+                    <div class="parallax"><img src="assets/parallax1.jpg"></div>
+                </div>
             </div>
         </main>
         
